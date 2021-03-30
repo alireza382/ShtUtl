@@ -13,15 +13,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{F3566045-F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{1B34815C-5C58-4A33-B247-FF57A1C00FC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShtUrl.API", "ShtUrl.API\ShtUrl.API.csproj", "{604A9C25-2238-41EA-8B30-C80270C34FC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShtUrl.API", "ShtUrl.API\ShtUrl.API.csproj", "{604A9C25-2238-41EA-8B30-C80270C34FC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShtUrl.Application", "ShtUrl.Application\ShtUrl.Application.csproj", "{CD7E64D3-B31D-48B7-9A30-E932EBC8AE2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShtUrl.Application", "ShtUrl.Application\ShtUrl.Application.csproj", "{CD7E64D3-B31D-48B7-9A30-E932EBC8AE2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShtUrl.Data", "ShtUrl.Data\ShtUrl.Data.csproj", "{50D0EA63-F46B-4534-85B8-009903311891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShtUrl.Data", "ShtUrl.Data\ShtUrl.Data.csproj", "{50D0EA63-F46B-4534-85B8-009903311891}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShtUrl.DIP", "ShtUrl.DIP\ShtUrl.DIP.csproj", "{6537E764-B2A2-4606-914F-1C5463CF58BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShtUrl.DIP", "ShtUrl.DIP\ShtUrl.DIP.csproj", "{6537E764-B2A2-4606-914F-1C5463CF58BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShtUrl.Domain", "ShtUrl.Domain\ShtUrl.Domain.csproj", "{6BDA52B1-0EF9-43FA-80E2-A6F54C2AE882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShtUrl.Domain", "ShtUrl.Domain\ShtUrl.Domain.csproj", "{6BDA52B1-0EF9-43FA-80E2-A6F54C2AE882}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin", "Bin", "{B1777CF6-B629-42FE-A108-69CCAE5D75E7}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\IOC\Tot.IOC\IOC.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll = ..\..\..\Desktop\IOC\Tot.IOC\IOC.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
