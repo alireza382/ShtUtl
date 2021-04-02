@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ShtUrl.Data.DataServices
 {
-    class DataService : IDataService
+    public class DataService : IDataService
     {
         private readonly ShoorteenUrlDbContext _shoorteenUrlDbContext;
 
@@ -51,6 +51,8 @@ namespace ShtUrl.Data.DataServices
             return (i == 0) ? false : true;
 
         }
+
+        
 
        
     }

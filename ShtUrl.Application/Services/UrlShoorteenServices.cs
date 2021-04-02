@@ -30,7 +30,8 @@ namespace ShtUrl.Application.Services
 
         public string getOriginalUrl(string shoorteenUrl)
         {
-            var originalUrlDate = _shoorteenUrlDbContext.shorteenUrls.FirstOrDefault(x => x.OriginalUrl == shoorteenUrl);
+            var originalUrlDate = _shoorteenUrlDbContext.shorteenUrls.FirstOrDefault(x => x.ShortUrl == shoorteenUrl);
+            if (originalUrlDate == null) return null;
             return originalUrlDate.OriginalUrl;
         }
 

@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ShtUrl.Application\ShtUrl.Application.csproj" />
     <ProjectReference Include="..\ShtUrl.Data\ShtUrl.Data.csproj" />
   </ItemGroup>
 

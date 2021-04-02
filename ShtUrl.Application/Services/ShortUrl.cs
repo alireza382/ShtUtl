@@ -7,7 +7,7 @@ using System.Text;
 
 namespace ShtUrl.Application.Services
 {
-    class ShortUrl : IUrlshoorter
+    public class ShortUrl : IUrlshoorter
     {
         private readonly ShoorteenUrlDbContext _shoorteenUrlDbContext;
 
@@ -41,10 +41,14 @@ namespace ShtUrl.Application.Services
 
         public int GetMaxLengthUrls()
         {
-
-            var id = _shoorteenUrlDbContext.shorteenUrls.Max(x => x.Id);
-             int CountOfdigit = (int) Math.Floor(Math.Log10(id) + 1);
-            return id + 3;
+            int idMax;
+            var id = _shoorteenUrlDbContext.shorteenUrls.Select(x => x.Id).ToList();
+            if (id.Count == 0)
+                idMax = 1;
+            else
+                 idMax = id.Max();
+             int CountOfdigit = (int) Math.Floor(Math.Log10(idMax) + 1);
+            return idMax  + 3;
         }
         public bool IsRepetative(string shorturl)
         {
